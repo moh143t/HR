@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RedhuAutomationFrameWork">
+
+	<listeners>
+
+		<listener class-name="com.redhu.FailTestCase.FailTestCaseHandling" />
+
+		<listener class-name="com.redhu.ExtentReporting.ExtentReporterNG" />
+
+	</listeners>
+
+
+	<test name="HR-ONBOARDING">
+		<classes>
+
+
+			<class name="com.HrOnBoarding.QA.TestCases.LoginScreenTest"></class>
+			<class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest"></class>
+
+
+		</classes>
+	</test>
+</suite>

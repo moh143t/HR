@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RedhuAutomationFrameWork">
+
+ <listeners>
+   <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling" />
+   <listener class-name="com.redhu.ExtentReporting.ExtentReporterNG" />
+	
+	</listeners>
+
+
+	<test name="TakeAClassTest">
+		<classes>
+			<class name="com.TakeAClass.TestCases.LoginPageTest"></class>
+			<class name="com.TakeAClass.TestCases.SettingPageTest"></class>
+			<class name="com.TakeAClass.TestCases.SearchClassFilters"></class>
+			<class name="com.TakeAClass.TestCases.EditProfilePageTest"></class>
+			
+			
+
+		</classes>
+	</test>
+</suite>

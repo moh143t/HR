@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RedhuAutomationFrameWork]">
+  <listeners>
+    <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling"/>
+    <listener class-name="com.redhu.ExtentReporting.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="HR-ONBOARDING(failed)">
+    <classes>
+      <class name="com.HrOnBoarding.QA.TestCases.AddClientByAdminTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addClientByAdminUser"/>
+        </methods>
+      </class> <!-- com.HrOnBoarding.QA.TestCases.AddClientByAdminTest -->
+    </classes>
+  </test> <!-- HR-ONBOARDING(failed) -->
+</suite> <!-- Failed suite [RedhuAutomationFrameWork] -->
